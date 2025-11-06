@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, c;
+
+    printf("Scrivi il primo numero (a): ");
+    scanf("%d", &a);
+
+    printf("Scrivi il secondo numero (b): ");
+    scanf("%d", &b);
+
+    printf("Scrivi il terzo numero (c): ");
+    scanf("%d", &c);
+
+    printf("\nPrima dello scambio:\n");
+    printf("a = %d, b = %d, c = %d\n", a, b, c);
+    
+    a = a + b + c;
+    b = a - (b + c);
+    c = a - (b + c);
+    a = a - (b + c);
+
+    printf("\nDopo lo scambio:\n");
+    printf("a = %d, b = %d, c = %d\n", a, b, c);
+
+    return 0;
+}
